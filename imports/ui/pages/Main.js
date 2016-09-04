@@ -6,8 +6,11 @@ export default class Main extends React.Component{
   }
 
   render(){
+    let code='<Button className="btn-primary">Primary</Button>'
     return(
-      <div> MAIN </div>
+      <div>
+        <h1>HOME</h1>
+      </div>
     )
   }
 }

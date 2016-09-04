@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default MainLayout = ({nav, content, footer}) =>(
-   <div className="content">
+   <div>
       <main>
         {nav()}
         <div className="content-layout">

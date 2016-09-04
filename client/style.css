@@ -1,0 +1,243 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+#nav-button-toolbar{
+  display: none;
+  position: absolute;
+  top: 1.5em;
+  right: 5em;
+}
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  /* Hide elements */
+  #menu-navbar-collapse{
+    display: none;
+  }
+  #nav-button-toolbar{
+    display: block;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  /* Hide element */
+  #menu-navbar-collapse{
+    display: none;
+  }
+  #nav-button-toolbar{
+    display: block;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  /* Hide element */
+  #menu-navbar-collapse{
+    display: none;
+  }
+  #nav-button-toolbar{
+    display: block;
+  }
+
+}
+
+/*==================================================
+=            Navbar                                =
+==================================================*/
+
+.navbar{
+  background-color: #fff;
+}
+.navbar-toggle{
+  right: 1em;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important;
+    padding-bottom:0 !important;
+    height: 4em;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+
+.navbar-text{
+  position: absolute;
+  margin-left: 3em;
+  margin-top: 0.9em;
+  color: #293C57;
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-text{
+  color: #293C57;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #293C57;
+}
+
+#logo-brand{
+  top:0.5em;
+  position: absolute;
+}
+
+/*==================================================
+=            Buttons                               =
+==================================================*/
+
+.button-menu-active{
+  background-color: #293C57;
+  color: #fff;
+  border-radius:17px;
+}
+
+.button-menu{
+  background-color: #fff;
+  color: #6f6f6f;
+  border-color: #fff;
+}
+/* Default Button */
+.btn-default{
+  border-radius: 17px;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active,
+.open>.dropdown-toggle.btn-default {
+  text-transform: uppercase;
+  border-color: #293C57;
+  border-width: 0.2em;
+  font-weight: bold;
+  color: #293C57;
+  background-color: transparent;
+}
+
+/* Primary Button */
+.btn-primary{
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border-color: #ff6624;
+  border-width: 0.2em;
+  color: #ff6624;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.btn-primary:active:hover{
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border-color: #ff6624;
+  border-width: 0.2em;
+  color: #ff6624;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff6624;
+    border-color: #ff6624; /*set the color you want here*/
+}
+
+/* Call to Action */
+.btn-call-to-action{
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border-width: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6624;
+  border-color: #ff6624; /*set the color you want here*/
+}
+
+.btn-call-to-action:hover, .btn-call-to-action:focus, .btn-call-to-action:active,
+.btn-call-to-action.active, .open>.dropdown-toggle.btn-call-to-action {
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  border-width: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6624;
+  border-color: #ff6624; /*set the color you want here*/
+}
+
+/* Call to Action Secondary */
+.btn-call-to-action-secondary{
+  text-transform: uppercase;
+  border-radius: 0.1em;
+  border-width: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2e4462;
+  border-color: #2e4462;
+}
+
+.btn-call-to-action-secondary:hover, .btn-call-to-action-secondary:focus,
+.btn-call-to-action-secondary:active, .btn-call-to-action-secondary.active,
+.open>.dropdown-toggle.btn-call-to-action-secondary {
+  text-transform: uppercase;
+  border-radius: 0.1em;
+  border-width: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2e4462;
+  border-color: #2e4462; /*set the color you want here*/
+}
+
+/* Circle Buttons */
+.btn-circle {
+  width: 3em;
+  height: 3em;
+  padding: 0em 0em;
+  font-size: 1em;
+  line-height: 1.428571429;
+  border-radius: 50%;
+  text-align: center;
+}
+.btn-circle.btn-lg {
+  width: 3em;
+  height: 3em;
+  padding: 0em 0em;
+  font-size: 1.3em;
+  line-height: 1.33;
+  border-radius: 50%;
+  text-align: center;
+}
+.btn-circle.btn-xl {
+  width: 3em;
+  height: 3em;
+  font-size: 2em;
+  line-height: 1.33;
+  border-radius: 50%;
+  text-align: center;
+}
