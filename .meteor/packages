@@ -22,11 +22,14 @@ shell-server@0.2.1             # Server-side component of the `meteor shell` com
 
 #BACKEND
 kadira:flow-router
+zimme:active-route
 ultimatejs:tracker-react
 aldeed:simple-schema
 aldeed:collection2
 
 #FROTEND
+twbs:bootstrap
+ixdi:material-design-iconic-font
 fortawesome:fontawesome
 
 #DEBUG
