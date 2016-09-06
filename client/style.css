@@ -11,12 +11,57 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+  #counter{
+    text-align: center;
+    position: relative;
+    margin-left: 2%;
+  }
+  .numberCircle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width: 6em;
+      height: 6em;
+      background: rgba(255, 255, 255, 0);
+      border: 0.5em solid #fff;
+      color: #fff;
+      font: 0.8em Acme;
+      text-align: center;
+      float: left;
+      margin: 0 2em;
+      color: #fff;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+  #counter{
+    text-align: center;
+    position: relative;
+    margin-left: 10%;
+  }
 
+}
+/*  */
+@media only screen and (min-width : 580px) {
+  #counter{
+    text-align: center;
+    position: relative;
+    margin-left: 15%;
+  }
+  .numberCircle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width: 6.5em;
+      height: 6.5em;
+      background: rgba(255, 255, 255, 0);
+      border: 0.5em solid #fff;
+      color: #fff;
+      font: 0.8em Acme;
+      text-align: center;
+      float: left;
+      margin: 0 2em;
+      color: #fff;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -27,6 +72,25 @@
   }
   #nav-button-toolbar{
     display: block;
+  }
+  #counter{
+    text-align: center;
+    position: relative;
+    margin-left: 25%;
+  }
+  .numberCircle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width: 6.5em;
+      height: 6.5em;
+      background: rgba(255, 255, 255, 0);
+      border: 0.5em solid #fff;
+      color: #fff;
+      font: 0.8em Acme;
+      text-align: center;
+      float: left;
+      margin: 0 2em;
+      color: #fff;
   }
 }
 
@@ -39,6 +103,25 @@
   #nav-button-toolbar{
     display: block;
   }
+  #counter{
+    text-align: center;
+    position: relative;
+    margin-left: 30%;
+  }
+  .numberCircle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width: 6em;
+      height: 6em;
+      background: rgba(255, 255, 255, 0);
+      border: 0.5em solid #fff;
+      color: #fff;
+      font: 1em Acme;
+      text-align: center;
+      float: left;
+      margin: 0 2em;
+      color: #fff;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -50,7 +133,20 @@
   #nav-button-toolbar{
     display: block;
   }
-
+  .numberCircle {
+      border-radius: 50%;
+      behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+      width: 6.5em;
+      height: 6.5em;
+      background: rgba(255, 255, 255, 0);
+      border: 0.5em solid #fff;
+      color: #fff;
+      font: 1em Acme;
+      text-align: center;
+      float: left;
+      margin: 0 2em;
+      color: #fff;
+  }
 }
 
 /*==================================================
@@ -123,7 +219,7 @@
   top:5em;
   left:0;
   width: 100%;
-  height: 30em;
+  height: 35em;
 }
 
 .layer {
@@ -131,18 +227,20 @@
   opacity: 0.85;
   position: absolute;
   top: 0em;
-  left: 0;
+  align-content: center;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
 
 .element-centered{
-  padding-top: 4em;
   text-align: center;
 }
-
+/*==================================================
+=            Counter                               =
+==================================================*/
 #scrolldown-button{
-  padding-top: 5em;
+  padding-top: 3em;
 }
 
 #timer-title{
@@ -154,21 +252,9 @@
   font-family: acme;
 }
 
-#del-countdown{
-  width: 100%;
-  margin: 5% auto;
-}
-
 #clock span{
-  float: left;
   text-align: center;
-  font-size: 84px;
-  margin: 0 2.5%;
-  color: #000;
-  padding: 20px;
-  width: 20%;
-  border-radius: 20px;
-  box-sizing: border-box;
+  font-size: 2.5em;
 }
 
 #clock span:nth-child(1){
@@ -205,6 +291,38 @@
   font-family: acme;
 }
 
+#unit{
+  float: left;
+  width: 5%;
+  text-align: center;
+  margin-top: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: acme;
+}
+
+#input-email{
+  position: relative;
+  z-index: 2;
+  width: 16em;
+  height: 3em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+
+/* The Magic Float Center Code */
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
 /*==================================================
 =            Buttons                               =
 ==================================================*/
@@ -268,8 +386,9 @@
 /* Call to Action */
 .btn-call-to-action{
   text-transform: uppercase;
-  border-radius: 0.3em;
+  border-radius: 0.1em;
   border-width: 0.2em;
+  height: 3em;
   font-size: 1em;
   font-weight: bold;
   color: #fff;
